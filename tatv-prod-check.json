@@ -50,6 +50,10 @@
       }
     },
     {
+      "type": "waitForTextPresent",
+      "text": "Étape suivante"
+    },
+    {
       "type": "setElementSelected",
       "locator": {
         "type": "id",

@@ -1,0 +1,107 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "https://www.touring-assurances.be/?utm_source=AGS&utm_medium=AGS&utm_campaign=AGS"
+    },
+    {
+      "type": "waitForTextPresent",
+      "text": "Simulation gratuite en ligne"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "center_auto"
+      }
+    },
+    {
+      "type": "waitForTextPresent",
+      "text": "Sitemap Menu AUTO Nos formules d'assurance Assurance responsabilité civile Assurance"
+    },
+    {
+      "type": "waitForTextPresent",
+      "text": "Age du véhicule* :"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "lbl_vehicle_range"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//select[@id='vehicle_range']//option[1]"
+      }
+    },
+    {
+      "type": "waitForTextPresent",
+      "text": "Marque* :"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//select[@id='vehicle_brand']//option[1]"
+      }
+    },
+    {
+      "type": "waitForTextPresent",
+      "text": "Modèle* :"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//select[@id='vehicle_model']//option[1]"
+      }
+    },
+    {
+      "type": "waitForTextPresent",
+      "text": "Carburant* :"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//select[@id='vehicle_fuel']//option[1]"
+      }
+    },
+    {
+      "type": "waitForTextPresent",
+      "text": "Boite de vitesse* :"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//select[@id='vehicle_gearBox']//option[2]"
+      }
+    },
+    {
+      "type": "waitForTextPresent",
+      "text": "1.4TDI66 ULTRA"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Étape suivante"
+      }
+    }
+  ],
+  "data": {
+    "configs": {
+      "none": {}
+    },
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
