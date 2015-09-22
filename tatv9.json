@@ -1,0 +1,503 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "https://www.touring-assurances.be/?utm_source=AGS&utm_medium=AGS&utm_campaign=AGS"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Simulation gratuite en ligne"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "center_auto"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Simulation d'assurance auto gratuite sans engagement"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Age du véhicule* :"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//select[@id='vehicle_range']//option[2]"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Marque* :"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//select[@id='vehicle_brand']//option[2]"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Modèle* :"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//select[@id='vehicle_model']//option[2]"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Carburant* :"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//select[@id='vehicle_fuel']//option[2]"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Boite de vitesse* :"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//select[@id='vehicle_gearBox']//option[2]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "#lbl_ > h2"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Vous ne trouvez pas le modèle exact de votre voiture ? Pas de panique, le plus important pour nous est de connaître la puissance (KW) de votre véhicule !"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "vehicle_versionId_1"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "id",
+        "value": "vehicle_versionId_1"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Étape suivante"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Étape suivante"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Détails du véhicule"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "vehicle_firstmatrDateDay"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "vehicle_firstmatrDateDay"
+      },
+      "text": "1"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "vehicle_firstmatrDateMonth"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "vehicle_firstmatrDateMonth"
+      },
+      "text": "1"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "vehicle_firstmatrDateYear"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "vehicle_firstmatrDateYear"
+      },
+      "text": "2015"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "div.dynamic-form"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Étape suivante"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Conducteur principal"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "driver_name"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "driver_name"
+      },
+      "text": "Test"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "driver_surname"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "driver_surname"
+      },
+      "text": "Jenkins"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "driver_email"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "driver_email"
+      },
+      "text": "jenkins.test@mail.com"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "driver_birthDateDay"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "driver_birthDateDay"
+      },
+      "text": "1"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "driver_birthDateMonth"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "driver_birthDateMonth"
+      },
+      "text": "1"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "driver_birthDateYear"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "driver_birthDateYear"
+      },
+      "text": "1980"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "driver_licenseDateDay"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "driver_licenseDateDay"
+      },
+      "text": "1"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "driver_licenseDateMonth"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "driver_licenseDateMonth"
+      },
+      "text": "1"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "driver_licenseDateYear"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "driver_licenseDateYear"
+      },
+      "text": "2000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "driver_zipCode"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "driver_zipCode"
+      },
+      "text": "1000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "div.dynamic-form"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Étape suivante"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Bonus-malus* :"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//select[@id='driver_bonusMalus']//option[2]"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//select[@id='driver_previouscompanyinsured']//option[2]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "div.dynamic-form"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Étape suivante"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Votre formule"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "CAR_T_PO###CAR_T_PO_GLX"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "id",
+        "value": "CAR_T_PO###CAR_T_PO_GLX"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "div.dynamic-form"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Voir mon offre"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "modalpopup_content"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Oui, l’assistance m'intéresse"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Oui, l’assistance m'intéresse"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Pour recevoir votre offre sans engagement et bénéficier de la réduction internet -20%, veuillez saisir vos informations :"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//select[@id='holder_address_city']//option[2]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "holder_address_streetname"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "holder_address_streetname"
+      },
+      "text": "Rozendaal"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "holder_address_streetnumber"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "holder_address_streetnumber"
+      },
+      "text": "1"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "holder_homephone"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "holder_homephone"
+      },
+      "text": "623456789"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "div.dynamic-form"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Recevoir mon offre personnalisée"
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
