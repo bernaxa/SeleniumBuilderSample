@@ -114,6 +114,10 @@
       }
     },
     {
+      "type": "waitForPageToLoad",
+      "value": "6000"
+    },
+    {
       "type": "verifyTextPresent",
       "text": "Détails du véhicule"
     },
@@ -175,6 +179,10 @@
         "type": "link text",
         "value": "Étape suivante"
       }
+    },
+    {
+      "type": "waitForPageToLoad",
+      "value": "6000"
     },
     {
       "type": "verifyTextPresent",
@@ -345,6 +353,10 @@
       }
     },
     {
+      "type": "waitForPageToLoad",
+      "value": "6000"
+    },
+    {
       "type": "verifyTextPresent",
       "text": "Bonus-malus* :"
     },
@@ -413,6 +425,10 @@
       }
     },
     {
+      "type": "waitForPageToLoad",
+      "value": "6000"
+    },
+    {
       "type": "clickElement",
       "locator": {
         "type": "id",
@@ -429,6 +445,10 @@
         "type": "link text",
         "value": "Oui, l’assistance m'intéresse"
       }
+    },
+    {
+      "type": "waitForPageToLoad",
+      "value": "6000"
     },
     {
       "type": "verifyTextPresent",
