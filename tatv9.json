@@ -114,8 +114,8 @@
       }
     },
     {
-      "type": "waitForPageToLoad",
-      "value": "6000"
+      "type": "waitForTextPresent",
+      "text": "Détails du véhicule"
     },
     {
       "type": "verifyTextPresent",
@@ -181,8 +181,8 @@
       }
     },
     {
-      "type": "waitForPageToLoad",
-      "value": "6000"
+      "type": "waitForTextPresent",
+      "text": "Conducteur principal"
     },
     {
       "type": "verifyTextPresent",
@@ -353,8 +353,8 @@
       }
     },
     {
-      "type": "waitForPageToLoad",
-      "value": "6000"
+      "type": "waitForTextPresent",
+      "text": "Bonus-malus* :"
     },
     {
       "type": "verifyTextPresent",
@@ -389,8 +389,8 @@
       }
     },
     {
-      "type": "waitForPageToLoad",
-      "value": "6000"
+      "type": "waitForTextPresent",
+      "text": "Votre formule"
     },
     {
       "type": "verifyTextPresent",
@@ -425,15 +425,15 @@
       }
     },
     {
-      "type": "waitForPageToLoad",
-      "value": "6000"
-    },
-    {
       "type": "clickElement",
       "locator": {
         "type": "id",
         "value": "modalpopup_content"
       }
+    },
+    {
+      "type": "waitForTextPresent",
+      "text": "Oui, l’assistance m'intéresse"
     },
     {
       "type": "verifyTextPresent",
@@ -447,8 +447,8 @@
       }
     },
     {
-      "type": "waitForPageToLoad",
-      "value": "6000"
+      "type": "waitForTextPresent",
+      "text": "Pour recevoir votre offre sans engagement et bénéficier de la réduction internet -20%, veuillez saisir vos informations :"
     },
     {
       "type": "verifyTextPresent",
