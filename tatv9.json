@@ -377,6 +377,10 @@
       }
     },
     {
+      "type": "waitForPageToLoad",
+      "value": "6000"
+    },
+    {
       "type": "verifyTextPresent",
       "text": "Votre formule"
     },
